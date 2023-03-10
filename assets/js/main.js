@@ -25,15 +25,38 @@ BONUS 2:
 Applica stili differenti agli elementi aggiunti al DOM nel *BONUS 1*, a seconda che il valore inserito sia un numero, un fizz, un buzz o un fizzbuzz.
 Se sei a corto di idee per lo stile, potresti prendere spunto dallo screenshot fornito in consegna.*/ 
 
+//Strumenti
+
+//cicle
+//console.log
 
 //Procedimento
 
 // ciclo per i numeri da 1 a 100
-
+// se il numero è divisibile sia per 3 che per 5 con resto 0, stampiamo FizzBuzz
+// se il numero è divisibile solo per 3 con resto 0, stampiamo Fizz
+// se il numero è divisibile solo per 5 con resto 0, stampiamo Buzz
+// altrimenti stampiamo il numero
 
 // ciclo per i numeri da 1 a 100
 for (let i = 1; i <= 100; i++){
     console.log(i);
+// se il numero è divisibile sia per 3 che per 5, stampiamo FizzBuzz
+  if (i % 3 === 0 && i % 5 === 0) {
+    console.log("FizzBuzz");
+  }
+// se il numero è divisibile solo per 3, stampiamo Fizz
+  else if (i % 3 === 0) {
+    console.log("Fizz");
+  }
+// se il numero è divisibile solo per 5, stampiamo Buzz
+  else if (i % 5 === 0) {
+    console.log("Buzz");
+  }
+// altrimenti stampiamo il numero
+  else {
+    console.log(i);
+  } 
 }
   
   
