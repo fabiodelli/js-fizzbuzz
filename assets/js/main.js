@@ -26,7 +26,14 @@ Applica stili differenti agli elementi aggiunti al DOM nel *BONUS 1*, a seconda 
 Se sei a corto di idee per lo stile, potresti prendere spunto dallo screenshot fornito in consegna.*/ 
 
 
+//Procedimento
+
+// ciclo per i numeri da 1 a 100
 
 
-
+// ciclo per i numeri da 1 a 100
+for (let i = 1; i <= 100; i++){
+    console.log(i);
+}
+  
   
