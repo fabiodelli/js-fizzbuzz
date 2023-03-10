@@ -29,6 +29,10 @@ Se sei a corto di idee per lo stile, potresti prendere spunto dallo screenshot f
 
 //cicle
 //console.log
+// document
+// getElementById
+// insertAdjacentHTML
+// beforeend
 
 //Procedimento
 
@@ -44,21 +48,29 @@ for (let i = 1; i <= 100; i++){
 // se il numero è divisibile sia per 3 che per 5 con resto 0, stampiamo FizzBuzz
   if (i % 3 === 0 && i % 5 === 0) {
     console.log("FizzBuzz");
-    
+
 // bonus 1: aggiunta di elemento html nel container
     document.getElementById("container").insertAdjacentHTML("beforeend", "<div class='fizzbuzz'>FizzBuzz</div>"); 
   }
 // se il numero è divisibile solo per 3 con rsto 0, stampiamo Fizz
   else if (i % 3 === 0) {
     console.log("Fizz");
+
+// bonus 1: aggiunta di elemento html nel container
+    document.getElementById("container").insertAdjacentHTML("beforeend", "<div class='fizz'>Fizz</div>");
   }
 // se il numero è divisibile solo per 5 con resto 0, stampiamo Buzz
   else if (i % 5 === 0) {
     console.log("Buzz");
+
+// bonus 1: aggiunta di elemento html nel container
+    document.getElementById("container").insertAdjacentHTML("beforeend", "<div class='buzz'>Buzz</div>");    
   }
 // altrimenti stampiamo il numero
   else {
     console.log(i);
+// bonus 1: aggiunta di elemento html nel container
+    document.getElementById("container").insertAdjacentHTML("beforeend", "<div class=`number`>"+i+"</div>");
   } 
   
 }
