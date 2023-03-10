@@ -1,0 +1,30 @@
+#container{
+    border: 1px solid black !important;
+}
+
+.size{
+    width: 70px;
+    aspect-ratio: 1/1;
+    border: 1px solid black !important;
+}
+
+.number {
+    background-color: greenyellow;
+    color: black;
+  }
+  
+  .fizz {
+    background-color:red;
+    color: black;
+  }
+  
+  .buzz {
+    background-color: blue;
+    color: white;
+  }
+  
+  .fizzbuzz {
+    background-color: yellow;
+    color: black;
+  }
+  
