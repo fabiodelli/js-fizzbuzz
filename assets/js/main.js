@@ -74,7 +74,7 @@ for (let i = 1; i <= 100; i++){
     console.log(i);
     
 // bonus 1: aggiunta di elemento html nel container
-    container.insertAdjacentHTML("beforeend", "<div class='number fw-bold size'>"+i+"</div>");
+    container.insertAdjacentHTML("beforeend", `<div class='number fw-bold size'>${i}</div>`);
   } 
   
 }
