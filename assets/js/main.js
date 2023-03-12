@@ -1,3 +1,5 @@
+//Traccia
+
 /*Scrivi un programma che stampi in console i numeri da 1 a 100 ma che:
 per i multipli di 3 stampi “Fizz” al posto del numero
 per i multipli di 5 stampi “Buzz”
@@ -42,6 +44,7 @@ Se sei a corto di idee per lo stile, potresti prendere spunto dallo screenshot f
 // se il numero è divisibile solo per 5 con resto 0, stampiamo Buzz
 // altrimenti stampiamo il numero
 
+
 // ciclo per i numeri da 1 a 100
 for (let i = 1; i <= 100; i++){
 
@@ -50,28 +53,28 @@ for (let i = 1; i <= 100; i++){
     console.log("FizzBuzz");
 
 // bonus 1: aggiunta di elemento html nel container
-    document.getElementById("container").insertAdjacentHTML("beforeend", "<div class='fizzbuzz fw-bold size'>FizzBuzz</div>"); 
+    container.insertAdjacentHTML("beforeend", "<div class='fizzbuzz fw-bold size'>FizzBuzz</div>"); 
   }
 // se il numero è divisibile solo per 3 con rsto 0, stampiamo Fizz
   else if (i % 3 === 0) {
     console.log("Fizz");
 
 // bonus 1: aggiunta di elemento html nel container
-    document.getElementById("container").insertAdjacentHTML("beforeend", "<div class='fizz fw-bold size'>Fizz</div>");
+    container.insertAdjacentHTML("beforeend", "<div class='fizz fw-bold size'>Fizz</div>");
   }
 // se il numero è divisibile solo per 5 con resto 0, stampiamo Buzz
   else if (i % 5 === 0) {
     console.log("Buzz");
 
 // bonus 1: aggiunta di elemento html nel container
-    document.getElementById("container").insertAdjacentHTML("beforeend", "<div class='buzz fw-bold size'>Buzz</div>");    
+    container.insertAdjacentHTML("beforeend", "<div class='buzz fw-bold size'>Buzz</div>");    
   }
 // altrimenti stampiamo il numero
   else {
     console.log(i);
     
 // bonus 1: aggiunta di elemento html nel container
-    document.getElementById("container").insertAdjacentHTML("beforeend", "<div class='number fw-bold size'>"+i+"</div>");
+    container.insertAdjacentHTML("beforeend", "<div class='number fw-bold size'>"+i+"</div>");
   } 
   
 }
