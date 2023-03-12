@@ -1,14 +1,22 @@
+
+ *{
+ margin:0;
+ padding:0;
+ box-sizing:border-box;
+}
+
 #container{
     border: 1px solid black !important;
 }
 
 .size{
-    width: 70px;
+    width: 10%;
     aspect-ratio: 1/1;
     border: 1px solid black !important;
     display: flex;
     justify-content: center;
     align-items: center;
+    font-size: 12px;
 }
 
 .number {
